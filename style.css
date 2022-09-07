@@ -1,0 +1,602 @@
+:root {
+    --border-color: #E8E7EE;
+    --main-background: #F5F5F5;
+}
+
+
+@font-face {
+    font-family: BeVietnamProRegular;
+    src: url(./assets/font/BeVietnamPro/BeVietnamPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(./assets/font/outfit/Outfit-Regular.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: BeVietnamProRegular;
+}
+
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #F6F6F9;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-top > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-top > span {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+.header-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5% 7%;
+}
+
+.nav-links {
+    width: 40%;
+    display: flex;
+    gap: 6%;
+    align-items: center;
+}
+
+.nav-links > a {
+    color: #000;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.header-bottom > img {
+    visibility: hidden;
+    object-fit: contain;
+}
+
+.header-bottom > button {
+    padding: 1% 3%;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #1C2436;
+    border: 1px solid #E8E7EE;
+    background: #fff;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-bottom > button:hover {
+    box-shadow: 0 8px 16px 0 rgba(232, 231, 238, 1), 0 6px 20px 0 rgba(232, 231, 238, 1);
+}
+
+.meet-lemon {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    justify-content: center; 
+    align-items: center;
+    padding: 3rem 0;
+    gap: 1.5rem;
+} 
+
+.meet-lemon-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    
+
+}
+
+.meet-lemon-top >span {
+    color: #1C2436;
+    font-size: 1.1rem ;
+    font-weight: 400;
+}
+
+.meet-lemon-top > h1 {
+    color: #1C2436;
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.meet-lemon-top >small{
+   color: #1C2436;
+   font-size: 1.2rem;
+   line-height: 2rem;
+   font-weight: 400;
+   text-align: center;
+}
+
+.meet-lemon-bottom {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    transition: width 2s, height 4s ;
+}
+
+.meet-lemon-bottom:hover {
+    height: 100%;
+    width: 100%; 
+}
+
+.meet-lemon-bottom > img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.browse-the-collection {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 6rem;
+    gap: 2rem;
+}
+
+.layouts-pages {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E8E7EE;
+    padding: 1rem 0 ;
+}
+
+.layouts-pages > h1 {
+    font-family: outfit;
+    font-weight: 400;
+    color: #1C2436;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.layouts-pages > span {
+    font-weight: 400;
+    color: #1C2436;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    align-self: center;   
+}
+
+.cards-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem; 
+    perspective: 1000px;
+    flex-wrap: wrap;    
+}
+
+.lay-sec-com {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E8E7EE;
+    width: 32.8%;
+    min-width: 18rem;
+    height: 12rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(232, 231, 238, 1);
+    position: relative;
+    cursor: pointer;    
+}
+
+.lay-sec-com:hover { 
+    transform: rotateY(180deg);
+}
+
+.layout-color {
+    background-color: #CFF2ED;
+}
+
+.sections-color {
+    background-color:#E6CFF2;
+}
+
+.components-color {
+    background: #EBFA9E;
+}
+
+.lay-sec-com-top {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+}
+
+.lay-sec-com-top > img {
+    height: 4.5rem;
+    width: 4.5rem;   
+}
+
+.lay-sec-com-bottom {
+  transform: rotateY(180deg);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.lay-sec-com-bottom > h4 {
+    color: #1C2436;
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 1.4rem;  
+}
+
+.lay-sec-com-bottom > span {
+    display: flex;
+    text-align: center;
+    color:  #454C5F;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+.lay-sec-com-top,
+.lay-sec-com-bottom  
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    backface-visibility: hidden; 
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 2rem; 
+    background-color:#F6F6F9;  
+}
+
+.learn-more > button {
+  width: 100%;
+  border: none;
+  outline: none; 
+  background-color: #F6F6F9;
+  font-weight: 400;
+  font-size: 0.9rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+.learn-more > img {
+    height: 0.7rem;
+    width: 0.7rem;  
+}
+
+
+.lemon-template,
+.lemon-template-account-pages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+.lemon-template-pages,
+.account-pages {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5rem;
+}
+
+.template-pages-header,
+.account-pages-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.template-pages-header > span,
+.account-pages-header > span
+{
+    color: #454C5F;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: outfit; 
+}
+
+.template-pages-header > h1, 
+.account-pages-header > h1
+{
+    color:  #1C2436; 
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-family: outfit;
+}
+
+
+.template-pictures,
+.account-pictures
+{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+
+
+.template-pictures-top-left > img,
+.account-pictures-top-left > img {
+    height: 100%; 
+    width: 100%;
+}
+
+.template-pictures-top-right > img,
+.account-pictures-top-right > img {
+    height: 100%; 
+    width: 100%;
+}
+
+
+.template-pictures-bottom > img,
+.account-pictures-bottom > img
+{
+    height: 100%;
+    width: 100%;
+    align-self: center;
+}
+
+
+.lemon-template-double-pages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.overview-pages,
+.pricing-pages,
+.contact-pages,
+.blog-pages
+ {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+}
+
+.overview-pages-header,
+.pricing-pages-header,
+.contact-pages-header,
+.blog-pages-header
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;  
+}
+
+.overview-pages-header > span, 
+.pricing-pages-header > span ,
+.contact-pages-header > span,
+.blog-pages-header > span
+{
+    color: #454C5F;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: outfit;
+}
+
+.overview-pages-header > h1, 
+.pricing-pages-header > h1,
+.contact-pages-header > h1,
+.blog-pages-header >h1
+{
+    color:  #1C2436; 
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-family: outfit;
+}
+
+.overview-pages-pictures, 
+.pricing-pages-pictures,
+.contact-pages-pictures,
+.blog-pages-pictures
+{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 3rem 4rem;
+    flex-wrap: wrap;  
+}
+
+
+
+.overview-pictures-left > img, 
+.pricing-pictures-left > img,
+.contact-pictures-left > img,
+.blog-pictures-left > img
+ {
+    height: 100%;
+    width: 100%;
+}
+
+.overview-pictures-right > img, 
+.pricing-pictures-right > img,
+.contact-pictures-right > img,
+.blog-pictures-right > img
+ {
+    height: 100%;
+    width: 100%;
+}
+
+.lemon-webflow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 5rem;   
+}
+
+.lemon-webflow-inner {
+ background-color: #2A514C;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
+
+.ui-library {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #F0FAF81A;
+}
+
+.ui-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.ui-right > span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    align-self: center;
+}
+
+.ui-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid #EBFA9E;
+    cursor: pointer;
+}
+
+.icon-logo:hover {
+    background-color: #EBFA9E;
+    transition: ease-in-out 1s; 
+}
+
+.icon-logo > img {
+    height: 0.9rem;
+    width: 0.9rem;
+    align-self: center;
+}
+
+.pages-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    border-bottom: 1px solid #F0FAF81A;
+    flex-wrap: wrap;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;  
+}
+
+.pages > a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;   
+}
+
+.pages > span {
+    color: #EBFA9E;
+    font-size: 1rem;
+    font-weight: 400;   
+}
+
+.footer-section{
+    display: flex;
+    padding-top: 2.5rem;
+}
+
+.footer-section > footer {
+    color:#F0FAF8;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+
+.footer-color {
+  color: #BFE03E;
+}
+
+
+@media(max-width:768px) {
+     .nav-links {
+        display: none;
+     }
+    
+     .header-bottom > img {
+        visibility: visible;
+     }
+    
+    
+    
+    .layouts-pages {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+    }
+}
